@@ -1,0 +1,14 @@
+<%- include("partials/header") -%>
+
+<div class = "main text container segment ui">
+	<div class = "ui huge header"> New Blog </div>
+	<form action = "/blogs" method = "POST">
+		<input type="text" placeholder="title" name="blog[title]"> 
+		<input type="text" placeholder="image" name="blog[image]"> 
+		<input type="text" placeholder="description" name="blog[body]"> 
+		<input type="submit">
+	</form>
+</div>
+
+
+<%- include("partials/footer") -%>

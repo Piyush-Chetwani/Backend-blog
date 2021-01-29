@@ -1,0 +1,14 @@
+<%- include("partials/header") -%>
+
+<div class = "main text container segment ui">
+	<div class = "ui huge header"> Edit <%= blog.title %> </div>
+	<form action = "/blogs/<%= blog._id %>?_method=PUT" method = "POST">
+		<input type="text" name="blog[title]" value="<%= blog.title %>"> 
+		<input type="text" name="blog[image]" value="<%= blog.image %>"> 
+		<input type="text" name="blog[body]" value="<%= blog.body %>"> 
+		<input type="submit">
+	</form>
+</div>
+
+
+<%- include("partials/footer") -%>
